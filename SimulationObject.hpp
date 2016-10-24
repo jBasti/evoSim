@@ -9,8 +9,9 @@
 #ifndef SimulationObject_hpp
 #define SimulationObject_hpp
 
-#include <stdio.h>
 #include <string>
+
+namespace EvoSim{
 
 class SimulationObject{
         
@@ -34,6 +35,6 @@ class SimulationObject{
     };
 
 
-
+}
 
 #endif /* SimulationObject_hpp */

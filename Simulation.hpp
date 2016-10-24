@@ -11,12 +11,15 @@
 
 #include <stdio.h>
 
-class Simulation{
+namespace EvoSim{
+
+   class Simulation{
     
-    // All the simulation configuration stuff should go here...
-public:
-    static int MAX_GRID_POSITION;
+   // All the simulation configuration stuff should go here...
+   public:
+       static int MAX_GRID_POSITION;
     
-};
+   };
+}
 
 #endif /* Simulation_hpp */

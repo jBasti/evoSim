@@ -9,30 +9,34 @@
 #include "SimulationObject.hpp"
 
 
-using namespace std;
-
-SimulationObject::SimulationObject(){
+namespace EvoSim{
     
-    this->identifier = "";
+    SimulationObject::SimulationObject(){
+        
+        this->identifier = "";
+        
+    }
+    
+    SimulationObject::SimulationObject(std::string identifier){
+        this->identifier = identifier;
+    }
+    
+    SimulationObject::~SimulationObject(){
+        
+    }
+    
+    void SimulationObject::setIdentifier(std::string newIdentifier){
+        this->identifier = newIdentifier;
+    }
+    
+    std::string SimulationObject::getIdentifier(){
+        return identifier;
+    }
+    
+    int SimulationObject::getDummyCounter(){
+        return 1;
+    }
+    
     
 }
 
-SimulationObject::SimulationObject(string identifier){
-    this->identifier = identifier;
-}
-
-SimulationObject::~SimulationObject(){
-    
-}
-
-void SimulationObject::setIdentifier(string newIdentifier){
-    this->identifier = newIdentifier;
-}
-
-string SimulationObject::getIdentifier(){
-    return identifier;
-}
-
-int SimulationObject::getDummyCounter(){
-    return 1;
-}

@@ -9,4 +9,8 @@
 #include "Simulation.hpp"
 
 
- int Simulation::MAX_GRID_POSITION = 500;
+ namespace EvoSim{
+
+   int Simulation::MAX_GRID_POSITION = 500;
+
+ }
